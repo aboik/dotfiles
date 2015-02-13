@@ -5,3 +5,5 @@
 	name = Andrew Boik
 [gitreview]
 	username = dboik
+[merge]
+	tool = meld
