@@ -9,3 +9,5 @@
 	tool = meld
 [core]
 	editor = vim
+[url "https://"]
+	insteadOf = git://
