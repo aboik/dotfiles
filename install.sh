@@ -10,6 +10,10 @@ install_pathogen()
 	mkdir -p ~/.vim/autoload ~/.vim/bundle
 	curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 }
+install_dotvim()
+{
+	cp -ur $SCRIPT_PATH/.vimrc/* ~/.vim/
+}
 install_vim_colors_solarized()
 {
 	git clone http://github.com/altercation/vim-colors-solarized.git \
@@ -19,6 +23,7 @@ install_vim()
 {
 	install_vimrc
 	install_pathogen
+	install_dotvim
 	install_vim_colors_solarized
 }
 install_gitconfig_cisco()
